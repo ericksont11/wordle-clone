@@ -1,0 +1,135 @@
+/* default styling */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Clear Sans;
+    src: url('ClearSans-Regular.ttf');
+}
+
+
+/* header styling */
+
+h1 {
+    font-family: 'Clear Sans';
+    width: 20%;
+    margin-left: 40%;
+    color: white;
+    text-align: center;
+    border-bottom: 1px gray solid;
+    margin-bottom: 0.5%;
+}
+
+
+/* user selection styling */
+
+.choice-container {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 40%;
+}
+
+.selection {
+    width: 18%;
+    height: 6vh;
+    padding-bottom: 2%; 
+    margin-bottom: 1.5%; 
+    position: relative;
+    border: 2px gray solid;
+    font-size: 2rem;
+    line-height: 6vh;
+    text-align: center;
+    font-family: 'Clear Sans';
+}
+
+
+/* keyboard styling */
+
+.sticky {
+    position: -webkit-sticky;
+    position: absolute;
+    top: 78%;
+    width: 100%;
+    margin: 0;
+    padding: 0px
+}
+
+.kb-container {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 32.5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.letter {
+    font-family: 'Clear Sans';
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    margin-bottom: 1.5%;
+    margin-left: 1%;
+    width: 7%;
+    height: 6vh;
+    line-height: 6vh;
+}
+
+.letter-wide {
+    font-family: 'Clear Sans';
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    margin-bottom: 1.5%;
+    margin-left: 1%;
+    height: 6vh;
+    line-height: 6vh;
+    width: 10%;
+    font-size: 1vw;
+}
+
+
+/* stying adjustments for screen size */
+
+@media only screen and (max-width: 1000px) {
+    .container, h1 {
+        width: 60%;
+        margin-left: 20%;
+    }
+    .kb-container {
+        width: 60%;
+        margin-left: 20%;  
+    }
+    .letter2 {
+        font-size: 1.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .container, h1 {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .kb-container {
+        width: 100%;
+        margin-left: .01%;  
+    }
+    .letter2 {
+        width: 14%;
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-height: 815px) and (orientation:landscape){
+    .item {
+        height: 1rem;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
